@@ -1,0 +1,217 @@
+@import 'tailwindcss/tailwind.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+
+/* Resetting default margin and padding */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+/* Box sizing */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Fonts */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Links */
+a {
+    color: #007bff; /* Default link color */
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #0056b3; /* Link color on hover/focus */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Header */
+.header,
+.custom-header {
+    background-color: #e9f5fc; /* Light blue background */
+    padding: 20px 0;
+    border: none; /* Remove border */
+}
+
+.header-links,
+.custom-header .header-links {
+    list-style: none;
+    padding: 0;
+}
+
+.header-links li,
+.custom-header .header-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header-links li:last-child,
+.custom-header .header-links li:last-child {
+    margin-right: 0;
+}
+
+.header-links li a,
+.custom-header .header-links li a {
+    color: #0275d8; /* Dark blue text */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.header-links li a:hover,
+.custom-header .header-links li a:hover {
+    color: #0056b3; /* Darker blue color on hover */
+}
+
+/* Footer */
+.footer {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px 0;
+    border-top: 1px solid #dee2e6; /* Lighter border */
+    text-align: center;
+}
+
+.footer-text {
+    color: #333; /* Dark gray text */
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.full-screen-dialog-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional: for dark background effect */
+}
+
+.warning-container {
+    background-color: #ffffff;
+    padding: 0px; /* Add padding for better appearance */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+.warning-message {
+    color: #ff0000; /* Red text color */
+}

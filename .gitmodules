@@ -1,0 +1,3 @@
+[submodule "hacebook-backend/laradock"]
+	path = hacebook-backend/laradock
+	url = https://github.com/Laradock/laradock.git
